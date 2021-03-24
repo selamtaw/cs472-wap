@@ -1,0 +1,25 @@
+body{
+    font-family: arial,serif;
+    /*font-weight: bold;*/
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    padding: 5%;
+    margin: auto;
+    /*text-align: center;*/
+}
+
+h4{
+    background-color: darkslategrey;
+    color: white;
+    padding: 4px;
+}
+h2{
+    background-color: #223939;
+    padding: 1em;
+    color: white;
+}
+
+li span{
+    font-style:  italic;
+}
