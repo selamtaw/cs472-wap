@@ -1,0 +1,44 @@
+body {
+    font-family: arial, serif;
+    /*font-weight: bold;*/
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    /*padding: 5%;*/
+    margin: auto;
+    /*text-align: center;*/
+}
+
+h4 {
+
+    background-color: rgba(221,217,217, 0.3);
+    color: #d4d41c;
+    padding: 4px;
+    font-weight: lighter;
+    text-decoration: underline;
+    margin: 2px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#directions li span {
+    font-weight: bold;
+}
+
+#comments span{
+    font-style: italic;
+}
+#comments span::before{
+    content: "- ";
+}
+#comments .content{
+    background-color: lightyellow;
+}
+#links a{
+    color: #d2d227;
+}
+#footer{
+    text-align: right;
+}
