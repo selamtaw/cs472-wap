@@ -23,3 +23,10 @@ h2{
 li span{
     font-style:  italic;
 }
+
+.imdb-logo{
+    height: 18px;
+}
+.amazon-logo{
+    height: 25px;
+}
