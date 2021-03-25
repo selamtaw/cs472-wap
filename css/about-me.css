@@ -1,5 +1,5 @@
-body{
-    font-family: arial,serif;
+body {
+    font-family: arial, serif;
     /*font-weight: bold;*/
     font-size: 1.2em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -9,24 +9,26 @@ body{
     /*text-align: center;*/
 }
 
-h4{
+h4 {
     background-color: darkslategrey;
     color: white;
     padding: 4px;
 }
-h2{
+
+h2 {
     background-color: #223939;
     padding: 1em;
     color: white;
 }
 
-li span{
-    font-style:  italic;
+li span {
+    font-style: italic;
 }
 
-.imdb-logo{
+.imdb-logo {
     height: 18px;
 }
-.amazon-logo{
+
+.amazon-logo {
     height: 25px;
 }
