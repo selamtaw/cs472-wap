@@ -6,6 +6,11 @@
     font-family: arial, serif;
 }
 
+.card h2 {
+    text-align: center;
+    padding: 2%
+}
+
 .profile-pic {
     /*border-radius: 60%;*/
     height: 200px;
