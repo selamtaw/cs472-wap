@@ -21,18 +21,6 @@
     font-size: 18px;
 }
 
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
 
 a {
     text-decoration: none;
@@ -40,10 +28,17 @@ a {
     color: black;
 }
 
-button:hover, a:hover {
-    opacity: 0.7;
-}
+#links a{
+    background-color: white;
+    color: black;
+    border: black 1px solid;
 
-button a {
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#links a:hover{
+    background-color: black;
     color: white;
 }
