@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Welcome to Golden Dome Market</title>
+</head>
+<body>
+
+<div id="nav-menu">Golden Dome Market : : : SRM System
+    <span class="left-border">Products</span>
+    <span class="left-border">Suppliers</span>
+    <div class="align-right">
+        <span>Hello!</span>
+        <a id="sign-out-button" href="./login.html">Sign Out</a>
+    </div>
+</div>
+<div id="content">
+    <h3>New Product Form</h3>
+    <form action="" id="product-form">
+        <div class="left-items">
+            <label for="product-number-input">Product Number</label>
+            <input type="text" id="product-number-input">
+
+            <label for="name-input">Name</label>
+            <input type="text" id="name-input">
+
+            <label for="unit-price-input">Unit Price</label>
+            <input type="text" id="unit-price-input" value="0" datatype="number">
+
+        </div>
+
+        <div class="right-items">
+            <label for="quantity-in-stock-input">Quantity In Stock</label>
+            <input type="number" id="quantity-in-stock-input" value="0">
+
+            <label for="supplier">Supplier</label>
+            <select name="Supplier" id="supplier">
+                <option value="sup1">Supplier I</option>
+                <option value="sup2">Supplier II</option>
+                <option value="sup3">Supplier III</option>
+            </select>
+
+            <label for="supplied-date">Date Supplied</label>
+            <input type="date" id="supplied-date" title="Enter a valid date.">
+
+            <button class="form-button" type="submit" name="Add Product" id="submit-button">Add Product</button>
+            <button class="form-button" id="cancel-button">Cancel</button>
+            <button class="form-button" id="reset-button">Reset</button>
+        </div>
+
+
+    </form>
+</div>
+<div>
+    <a href="https://validator.w3.org/nu/?doc=https://selamtaw.github.io/cs472-wap/golden-dome-market/index.html"
+       target="_blank"><img
+            src="../resources/images/w3c-html.png" alt="w3c html logo"></a>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://selamtaw.github.io/cs472-wap/golden-dome-market/index.html"
+       target="_blank">
+        <img style="border:0;width:88px;height:31px"
+             src="http://jigsaw.w3.org/css-validator/images/vcss"
+             alt="Valid CSS!"/>
+    </a>
+</div>
+</body>
+</html>

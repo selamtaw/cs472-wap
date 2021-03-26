@@ -1,0 +1,57 @@
+body{
+    background-color: lightgrey;
+    font-family: Arial, serif;
+}
+
+#login-container{
+    width: 60%;
+    padding: 5%;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#login-container h3{
+    text-align: center;
+}
+
+#login-form{
+    width: 60%;
+    margin: auto;
+}
+
+#login-form input{
+    width: 100%;
+    border: dodgerblue 2px solid;
+    display: inline-block;
+    padding: 6px;
+}
+
+#login-form button{
+    width: 100%;
+    display: inline-block;
+    border: 2px dodgerblue solid;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+    margin: 6px;
+}
+
+#login-form button:hover{
+    border: 2px dodgerblue solid;
+    background-color: white;
+    color: dodgerblue;
+}
+
+#login-form label{
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+#login-form input#remember-me{
+    width: auto;
+    display: inline;
+}
+
