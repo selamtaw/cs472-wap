@@ -14,6 +14,8 @@ body{
 
 #login-container h3{
     text-align: center;
+    padding: 4px;
+    font-size: 1.4em;
 }
 
 #login-form{
@@ -32,6 +34,7 @@ body{
     width: 100%;
     display: inline-block;
     border: 2px dodgerblue solid;
+    border-radius: 4px;
     background-color: dodgerblue;
     color: white;
     font-size: 15px;
