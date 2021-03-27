@@ -20,19 +20,19 @@
         <form action="./index.html" id="login-form">
 
             <label for="email">Email</label>
-            <input id="email" type="text" placeholder="john@gmail.com" title="We'll never share your email :)">
+            <input id="email" type="text" placeholder="john@gmail.com" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" title="We'll never share your email :)">
 
             <br><br>
 
             <label for="password">Password</label>
-            <input id="password" type="password" minlength="10" pattern="[A-Z]{1}[a-z]{1}\d{1}"
-                   placeholder="Pass1234"
-            title="should contain at least one number and one uppercase and lowercase letter">
+            <input id="password" type="password" pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}"
+                   placeholder="Pass123456"
+            title="should contain at least one number and one uppercase and lowercase letter and at least 10 chars">
 
             <br><br>
 
             <label for="url">URl</label>
-            <input id="url" type="url"
+            <input id="url" pattern="(https://.+)(http://.+)"
                    placeholder="http://www.miu.edu"
                    title="Should start with http://">
 
