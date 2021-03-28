@@ -149,5 +149,58 @@ function computeSumOfSquareOfEvensOnly(nums){
     return computed;
 }
 
-console.log("problem 10: compute sum of square of evens only");
-console.log(computeSumOfSquareOfEvensOnly([1,2,3,4,5]));
+// console.log("problem 10: compute sum of square of evens only");
+// console.log(computeSumOfSquareOfEvensOnly([1,2,3,4,5]));
+
+
+/*problem 11 : implement problem 4 using declarative programming*/
+function sumImperative(arr){
+   return arr.reduce((x,y) => {
+        return x + y;
+    })
+}
+
+function multiplyImperative(arr){
+    return arr.reduce((x,y) => x * y);
+}
+// console.log("problem 11 : sum and multiply using declarative.");
+// console.log("sum: " + sumImperative([1,2,3,5]));
+// console.log("multiply " + multiplyImperative([1,2,3,5]));
+
+// problem 12 : find second biggest
+function findSecondBiggest(arr){
+    let first = arr[0];
+    let second = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > first){
+            second = first;
+            first = arr[i];
+        }
+        else if(arr[i] > second){
+            second = arr[i];
+        }
+    }
+    return second;
+}
+
+// console.log("problem 11 : find second biggest");
+// console.log(findSecondBiggest([1,2,3,4,5,6]));
+
+/*problem 13: print fibonacci's*/
+function printFibo(n, a, b){
+    let fibs = [];
+    fibs.push(a, b);
+    let sum = 0;
+    while(n > -2)
+    {
+        sum = a + b;
+        a = b;
+        b = sum;
+        fibs.push(sum);
+        n--;
+    }
+    return fibs;
+}
+
+console.log("problem 13 : fibs");
+console.log(printFibo(4, 0,1));
