@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/index.js" type="text/javascript"></script>
     <title>Welcome to Golden Dome Market</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
             <label for="supplied-date">Date Supplied</label>
             <input type="date" id="supplied-date" title="Enter a valid date.">
 
-            <button class="form-button" type="submit" name="Add Product" id="submit-button">Add Product</button>
+            <button class="form-button" type="submit" name="Add Product" id="submit-button" onclick="handleNewProduct()">Add Product</button>
             <button class="form-button" id="cancel-button">Cancel</button>
             <button class="form-button" id="reset-button">Reset</button>
         </div>

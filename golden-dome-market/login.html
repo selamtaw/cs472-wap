@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <script src="js/login.js" type="application/javascript"></script>
     <title>Login - Golden Dome Market</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <form action="./index.html" id="login-form">
 
             <label for="email">Email</label>
-            <input id="email" type="text" placeholder="john@gmail.com" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" title="We'll never share your email :)">
+            <input id="email" type="text" placeholder="john@gmail.com" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="We'll never share your email :)">
 
             <br><br>
 
@@ -40,7 +41,7 @@
             <label for="remember-me">Check me out</label>
             <input type="checkbox" id="remember-me">
             <br><br>
-            <button type="submit">Submit</button>
+            <button type="submit" onclick="handleLogin()">Submit</button>
 
         </form>
     </div>
