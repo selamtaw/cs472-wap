@@ -67,7 +67,87 @@ function multiply(arr){
     return total;
 }
 
-console.log("problem 4: sum and multiply");
-console.log("sum");
-console.log(sum([1,2,3,4]));
-console.log(multiply([2,3,4]));
+// console.log("problem 4: sum and multiply");
+// console.log("sum");
+// console.log(sum([1,2,3,4]));
+// console.log(multiply([2,3,4]));
+
+/*problem 5: reverse string*/
+function reverseString(str){
+    let reversed = "";
+    for(let i = str.length -1; i >= 0;i--){
+        reversed = reversed.concat(str[i]);
+    }
+    return reversed;
+}
+
+// console.log("problem 5: string reverse");
+// console.log(reverseString("jag testar"));
+
+
+// problem 6 : longest word
+function findLongestWord(words) {
+    let longestWord = words[0];
+
+    for(let i = 0; i < words.length; i++){
+        if(words[i].length > longestWord.length)
+            longestWord = words[i];
+    }
+    return longestWord;
+}
+
+// console.log("problem 6: longest word");
+// console.log(findLongestWord(["carlos", "selamtaw", "gebru"]));
+
+// problem 7 : filter long words
+function filterLongWords(words, length) {
+    let longWords = [];
+    for(let i = 0; i < words.length; i++){
+        if(words[i].length > length)
+            longWords.push(words[i]);
+    }
+    return longWords
+}
+
+// console.log("problem 7: filter long words");
+// console.log(filterLongWords(["carl", "sol", "john", "selamtaw"], 3));
+
+
+//problem 8 : compute sum of squares
+function computeSumOfSquares(arr) {
+    return arr.map(value => Math.pow(value, 2));
+}
+
+// console.log("problem 8: compute sum of squares");
+// console.log(computeSumOfSquares([2,3,4]));
+//
+
+// problem 9: print odd numbers only
+function printOddNumbersOnly(nums){
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] % 2 !== 0)
+            console.log(nums[i]);
+    }
+}
+
+// console.log("problem 9: odd numbers ");
+// printOddNumbersOnly([1,2,3,4,5,6]);
+
+/*problem 10 : compute sum of squares of evens only*/
+function computeSumOfSquareOfEvensOnly(nums){
+    let computed = 0;
+
+    for(let i = 0; i < nums.length; i++){
+        let x = nums[i];
+
+        if(x % 2 === 0)
+        {
+            computed += Math.pow(x, 2);
+        }
+    }
+
+    return computed;
+}
+
+console.log("problem 10: compute sum of square of evens only");
+console.log(computeSumOfSquareOfEvensOnly([1,2,3,4,5]));
