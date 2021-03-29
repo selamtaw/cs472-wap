@@ -202,5 +202,5 @@ function printFibo(n, a, b){
     return fibs;
 }
 
-console.log("problem 13 : fibs");
-console.log(printFibo(4, 0,1));
+// console.log("problem 13 : fibs");
+// console.log(printFibo(4, 0,1));
