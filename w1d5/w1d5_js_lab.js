@@ -115,12 +115,12 @@ function filterLongWords(words, length) {
 
 //problem 8 : compute sum of squares
 function computeSumOfSquares(arr) {
-    return arr.map(value => Math.pow(value, 2));
+    return arr.map(value => Math.pow(value, 2)).reduce((accumulator,current) => accumulator+current);
 }
 
-// console.log("problem 8: compute sum of squares");
-// console.log(computeSumOfSquares([2,3,4]));
-//
+console.log("problem 8: compute sum of squares");
+console.log(computeSumOfSquares([2,3,4]));
+
 
 // problem 9: print odd numbers only
 function printOddNumbersOnly(nums){
