@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
           rel="stylesheet">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./css/login.css">
-    <script src="js/login.js" type="application/javascript"></script>
+    <script defer src="js/login.js" type="application/javascript"></script>
     <title>Login - Golden Dome Market</title>
 </head>
 <body>
@@ -18,7 +20,7 @@
         Welcome to <br> Dome Market
     </h3>
     <div>
-        <form action="./index.html" id="login-form">
+        <form  id="login-form">
 
             <label for="email">Email</label>
             <input id="email" type="text" placeholder="john@gmail.com" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="We'll never share your email :)">
@@ -33,16 +35,16 @@
             <br><br>
 
             <label for="url">URl</label>
-            <input id="url" pattern="(https://.+)(http://.+)"
-                   placeholder="http://www.miu.edu"
+            <input id="url" pattern="https://.*" type="url"
+                   placeholder="https://www.miu.edu"
                    title="Should start with http://">
 
             <br><br>
             <label for="remember-me">Check me out</label>
             <input type="checkbox" id="remember-me">
             <br><br>
-            <button type="submit" onclick="handleLogin()">Submit</button>
-
+            <button type="submit">Submit</button>
+            <a href="./index.html">Go to New Product</a>
         </form>
     </div>
 </div>

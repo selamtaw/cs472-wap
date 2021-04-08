@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
           rel="stylesheet">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="./js/index.js" type="text/javascript"></script>
+    <script defer src="./js/index.js" type="text/javascript"></script>
     <title>Welcome to Golden Dome Market</title>
 </head>
 <body>
@@ -22,42 +24,52 @@
     </div>
 </div>
 <div id="content">
-    <h3>New Product Form</h3>
-    <form action="" id="product-form">
-        <div class="left-items">
-            <label for="product-number-input">Product Number</label>
-            <input type="text" id="product-number-input">
+    <div>
+        <h3>New Product Form</h3>
+        <form action="" id="product-form">
+            <div class="left-items">
+                <label for="product-number-input">Product Number</label>
+                <input type="text" id="product-number-input">
 
-            <label for="name-input">Name</label>
-            <input type="text" id="name-input">
+                <label for="name-input">Name</label>
+                <input type="text" id="name-input">
 
-            <label for="unit-price-input">Unit Price</label>
-            <input type="text" id="unit-price-input" value="0" datatype="number">
+                <label for="unit-price-input">Unit Price</label>
+                <input type="text" id="unit-price-input" value="0" datatype="number">
 
-        </div>
+            </div>
 
-        <div class="right-items">
-            <label for="quantity-in-stock-input">Quantity In Stock</label>
-            <input type="number" id="quantity-in-stock-input" value="0">
+            <div class="right-items">
+                <label for="quantity-in-stock-input">Quantity In Stock</label>
+                <input type="number" id="quantity-in-stock-input" value="0">
 
-            <label for="supplier">Supplier</label>
-            <select name="Supplier" id="supplier">
-                <option value="sup1">Supplier I</option>
-                <option value="sup2">Supplier II</option>
-                <option value="sup3">Supplier III</option>
-            </select>
+                <label for="supplier">Supplier</label>
+                <select name="Supplier" id="supplier">
+                    <option value="sup1">Supplier I</option>
+                    <option value="sup2">Supplier II</option>
+                    <option value="sup3">Supplier III</option>
+                </select>
 
-            <label for="supplied-date">Date Supplied</label>
-            <input type="date" id="supplied-date" title="Enter a valid date.">
+                <label for="supplied-date">Date Supplied</label>
+                <input type="date" id="supplied-date" title="Enter a valid date.">
 
-            <button class="form-button" type="submit" name="Add Product" id="submit-button" onclick="handleNewProduct()">Add Product</button>
-            <button class="form-button" id="cancel-button">Cancel</button>
-            <button class="form-button" id="reset-button">Reset</button>
-        </div>
+                <button class="form-button" type="submit" name="Add Product" id="submit-button" >Add Product</button>
+                <button class="form-button" id="cancel-button">Cancel</button>
+                <button class="form-button" id="reset-button">Reset</button>
+            </div>
 
 
-    </form>
+        </form>
+    </div>
+    <div id="products-container">
+        <br>
+        <h3>Products</h3>
+        <hr>
+        <p id="product-list"></p>
+    </div>
 </div>
+
+
 <div>
     <a href="https://validator.w3.org/nu/?doc=https://selamtaw.github.io/cs472-wap/golden-dome-market/index.html"
        target="_blank"><img

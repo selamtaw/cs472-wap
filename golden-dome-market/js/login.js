@@ -1,3 +1,4 @@
+/*
 function handleLogin(){
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -7,4 +8,19 @@ function handleLogin(){
     console.log("Email: " + email);
     console.log("Password: " + password);
     console.log("URL: " + url);
-}
+}*/
+
+$(document).ready(function () {
+
+    $("#login-form").submit(function (event) {
+        event.preventDefault();
+        const email = $("#email").val();
+        const password = $("#password").val();
+        const url = $("#url").val();
+        console.log(event);
+        console.log("**** using jquery ***");
+        console.log("Email: " + email);
+        console.log("Password: " + password);
+        console.log("Url: "+ url);
+    });
+});
