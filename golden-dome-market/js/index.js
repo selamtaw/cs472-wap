@@ -20,12 +20,12 @@ $(document).ready(function () {
 
     $("#reset-button").click(function (event) {
         event.preventDefault();
-        const productNumber = $("#product-number-input").val("");
-        const productName = $("#name-input").val("");
-        const unitPrice = $("#unit-price-input").val(0.0);
-        const quantityInStock = $("#quantity-in-stock-input").val(0.0);
+        $("#product-number-input").val("");
+        $("#name-input").val("");
+        $("#unit-price-input").val(0.0);
+        $("#quantity-in-stock-input").val(0.0);
         const supplier = $("#supplier").val("");
-        const suppliedDate = $("#supplied-date").val(null);
+        $("#supplied-date").val(null);
     });
 
     $("#submit-button").click(function (event) {
