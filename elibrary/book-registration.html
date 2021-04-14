@@ -13,6 +13,7 @@
 
     <title>The eLibrary - Register Book</title>
 </head>
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" href="index.html">The eLibrary : : : A CS472 Demo Web App</a>
@@ -34,7 +35,7 @@
     <hr>
     <p><span class="bold">Note: </span> Form fields marked with (*) are required.</p>
 
-    <form id="newBook">
+    <form id="newBookForm">
         <div class="form-row">
             <div class="col-md-12">
                 <label for="bookTitle">*Book Title</label>
@@ -50,7 +51,7 @@
             </div>
             <div class="col-md-6 mb-3">
                 <label for="overdue">*Overdue fee per day</label>
-                <input type="number" class="form-control" id="overdue" placeholder="0.0" value="0.0" required>
+                <input type="any" pattern="\d+(\.\d{1,2})?" class="form-control" id="overdue" placeholder="0.0" value="0.0" required>
             </div>
 
         </div>
@@ -68,26 +69,32 @@
         </div>
 
         <div class="form-row">
-           <div class="col-md-12">
-               <button class="btn btn-outline-primary" type="submit" style="float: right; margin-left: 1em;">Save Book </button>
-               <button class="btn btn-outline-danger" type="submit" style="float: right">Reset</button>
-           </div>
+            <div class="col-md-12">
+                <button class="btn btn-outline-primary" type="submit" style="float: right; margin-left: 1em;">Save
+                    Book
+                </button>
+                <button class="btn btn-outline-danger" type="reset" style="float: right">Reset</button>
+            </div>
         </div>
     </form>
 </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+<script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script defer src="js/book-registration.js"></script>
 
 </body>
 </html>
