@@ -1,0 +1,11 @@
+
+.left-border {
+    border-left: white 1px solid;
+    padding: 2px 14px;
+}
+
+.align-right {
+    float: right;
+}
+
+

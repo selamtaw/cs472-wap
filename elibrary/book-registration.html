@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/book-registration.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>The eLibrary - Register Book</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="index.html">The eLibrary : : : A CS472 Demo Web App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link left-border" href="#">About Us</a>
+            <a class="nav-item nav-link left-border" href="#">Virtual Tour</a>
+            <a class="nav-item nav-link left-border" href="books.html">Books</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h1 class="display-6">New Book Form</h1>
+    <hr>
+    <p><span class="bold">Note: </span> Form fields marked with (*) are required.</p>
+
+    <form id="newBook">
+        <div class="form-row">
+            <div class="col-md-12">
+                <label for="bookTitle">*Book Title</label>
+                <input type="text" class="form-control" id="bookTitle" placeholder="Book Title" value="" required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="isbn">*ISBN</label>
+                <input type="text" class="form-control" id="isbn" placeholder="ISBN" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="overdue">*Overdue fee per day</label>
+                <input type="number" class="form-control" id="overdue" placeholder="0.0" value="0.0" required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="publisher">*Publisher</label>
+                <input type="text" class="form-control" id="publisher" placeholder="Publisher" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="datePublished">*Date Published</label>
+                <input type="date" class="form-control" id="datePublished" placeholder="02/02/1990" required>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+           <div class="col-md-12">
+               <button class="btn btn-outline-primary" type="submit" style="float: right; margin-left: 1em;">Save Book </button>
+               <button class="btn btn-outline-danger" type="submit" style="float: right">Reset</button>
+           </div>
+        </div>
+    </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
